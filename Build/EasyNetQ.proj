@@ -70,7 +70,6 @@
             <TestProjects Include="$(Source)\EasyNetQ.Hosepipe.Tests\EasyNetQ.Hosepipe.Tests.csproj" />
             <TestProjects Include="$(Source)\EasyNetQ.Scheduler.Tests\EasyNetQ.Scheduler.Tests.csproj" />
             <TestProjects Include="$(Source)\EasyNetQ.Scheduler.Mongo.Tests\EasyNetQ.Scheduler.Mongo.Tests.csproj" />
-            <TestProjects Include="$(Source)\EasyNetQ.IntegrationTests\EasyNetQ.IntegrationTests.csproj" />
         </ItemGroup>
 
         <Exec WorkingDirectory="%(TestProjects.RootDir)\%(TestProjects.Directory)"
