@@ -30,24 +30,6 @@ artifacts:
   - path: Package\**\*.nupkg
   - path: Package\**\*.snupkg
 
-deploy:
-  - provider: NuGet
-    artifact: /.*\.s?nupkg/
-    server:
-    api_key:
-      secure: ejD7WLs3aqlXgHLyWq444QK6pnMT6g/QiRxptqIGaOgKvGM7SJ17r/QH6e1jEJ9M
-    skip_symbols: false
-    on:
-      branch: master
-  - provider: NuGet
-    artifact: /.*\.s?nupkg/
-    server:
-    api_key:
-      secure: ejD7WLs3aqlXgHLyWq444QK6pnMT6g/QiRxptqIGaOgKvGM7SJ17r/QH6e1jEJ9M
-    skip_symbols: false
-    on:
-      branch: develop
-
 skip_commits:
   files:
   - .gitattributes
